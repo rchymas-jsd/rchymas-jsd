@@ -3,30 +3,25 @@
 <head>
 <style>
 body {
-	background-color: #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(191, 120, 144)), to(rgb(217, 72, 120))) fixed;
 	display:  flex;
 	justify-content: center;
 	align-items:  center;
 	height:  100vh;
 }
-.rainbowText {
-	font-family: arial black;
-	font-size: 70px;
-	background-image: linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet);
-	-webkit-background-clip:  text;
-	-webkit-text-fill-color:  transparent;
-	animation: move 35s linear infinite;
+
+.maintext {
+	color: rgb(125,125,125);
+	font-family: 'Courier-New', monospace;
+	font-size: 84px;
+	-webkit-text-stroke:  2px white;
 }
-@keyframes move {
-		to {
-			background-position:  4500vh;
-		}
-}
+
 </style>
 </head>
 <body>
 
-<div class="rainbowText">sudo diskutil apfs updatePreboot /</div>
+<div class="maintext">sudo diskutil apfs updatePreboot /</div>
 
 </body>
 </html>
